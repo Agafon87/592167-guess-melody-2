@@ -8,8 +8,8 @@ const App = (props) => {
 };
 
 App.propTypes = {
-  time: PropTypes.number,
-  mistakes: PropTypes.number
+  time: PropTypes.number.isRequired,
+  mistakes: PropTypes.number.isRequired
 };
 
 export default App;
