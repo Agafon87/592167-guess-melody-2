@@ -1,19 +1,19 @@
 import React from 'react';
 import {shallow, configure} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import App from "../app/app.jsx";
+import WelcomeScreen from '../welcome-screen/welcome-screen.jsx';
 
 configure({adapter: new Adapter()});
 
-it(`App correctly renders after relaunch`, () => {
+it(`WelcomeScreen correctly renders after relauch`, () => {
   const clickHandler = jest.fn();
-  const app = shallow(<App
+  const welcomeScreen = shallow(<WelcomeScreen
     time={0}
     mistakes={0}
     onClick={clickHandler}
   />);
 
-  const startButton = app.find(`button`);
+  const startButton = welcomeScreen.find(`button`);
   startButton.simulate(`click`);
 
   expect(clickHandler).toHaveBeenCalledTimes(1);
