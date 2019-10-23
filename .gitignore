@@ -16,6 +16,3 @@ build/
 
 public/build.js
 public/build.js.map
-
-# Папки со снапшотами
-# *__snapshots__*
