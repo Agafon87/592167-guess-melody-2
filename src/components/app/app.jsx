@@ -1,10 +1,14 @@
 import React from 'react';
-import Welcome from '../welcome/welcome.jsx';
+import WelcomeScreen from '../welcome-screen/welcome-screen.jsx';
 import PropTypes from 'prop-types';
+
+const buttonClick = () => {
+  return;
+};
 
 const App = (props) => {
   const {time, mistakes} = props;
-  return <Welcome time={ time } mistakes={ mistakes }/>;
+  return <WelcomeScreen time={ time } mistakes={ mistakes } onClick={ buttonClick }/>;
 };
 
 App.propTypes = {
