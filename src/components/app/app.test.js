@@ -7,6 +7,7 @@ it(`App correctly renders after relaunch`, () => {
     .create(<App
       mistakes={0}
       time={0}
+      questionsGame={[]}
       onClick={jest.fn()}
     />)
     .toJSON();
